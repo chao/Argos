@@ -9,12 +9,18 @@
        }
    },
    {
-       "from": "",
-       "to": "../../"
+        "to": "../../:object",
+        "from": ":object"
+    },
+   { 
+     "from": "", 
+     "to": "../../",
+     "method": "POST"
    },
    {
-       "from": ":object",
-       "to": "../../:object"
+       "to": "_show/index",
+       "from": "",
+       "method": "GET"
    },
    {
        "from": "user/:user",
