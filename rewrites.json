@@ -1,5 +1,5 @@
 [
-   {
+   { 
        "from": "item/",
        "to": "_view/resource",
        "query": {
@@ -9,10 +9,6 @@
        }
    },
    {
-        "to": "../../:object",
-        "from": ":object"
-    },
-   { 
      "from": "", 
      "to": "../../",
      "method": "POST"
@@ -21,6 +17,10 @@
        "to": "_show/index",
        "from": "",
        "method": "GET"
+   },
+   {
+       "to": "../../:object",
+       "from": ":object"
    },
    {
        "from": "user/:user",
@@ -187,5 +187,9 @@
        "query": {
            "key": [":corpus"]
        }
+   },
+   {
+       "from": "freemind/viewpoint/:viewpoint",
+       "to": "_show/viewpoint/:viewpoint"
    }
 ]
